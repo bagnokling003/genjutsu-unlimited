@@ -27,8 +27,8 @@ from proxy_manager import ProxyManager, load_proxy_list, COOLDOWN_SECONDS
 
 log = logging.getLogger("creator")
 HIGGS = "https://higgsfield.ai"
-SIGNUP = f"{HIGGS}/signup"
-LOGIN = f"{HIGGS}/login"
+SIGNUP = f"{HIGGS}/auth/sign-up"
+LOGIN = f"{HIGGS}/auth/sign-in"
 CREATE = f"{HIGGS}/create"
 GENJUTSU = f"{HIGGS}/genjutsu"
 DEBUG_DIR = Path(os.getenv("DEBUG_DIR", "/tmp/debug")); DEBUG_DIR.mkdir(parents=True, exist_ok=True)
